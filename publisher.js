@@ -22,12 +22,12 @@ var setorL1 = false;
 var setorL2 = false;
 var setorL3 = false;
 
-function sensor(min, max) {
+function sensor(min, max) { // "Sensor da minha maquina"
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-function apagaSetores() {
+function apagaSetores() {// apagar todas os setores
     setorL1 = false;
     setorL2 = false;
     setorL3 = false;
