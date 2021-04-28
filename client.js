@@ -97,9 +97,9 @@ client.on('message', (topic, message) => {
         case resultSetorLuz1C:
             if (message != 'error') {
                 if (message == 'true') {
-                    console.log('\n>>>>Fontes luminosas do setor 1. LIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 1. LIGADAS!\n');
                 }else if (message == 'false') {
-                    console.log('\n>>>>Fontes luminosas do setor 1. DESLIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 1. DESLIGADAS!\n');
                 }
             }else {
                 console.log('\nImpossivel ligar as fontes luminosas do setor 1!:\\\n');
@@ -108,9 +108,9 @@ client.on('message', (topic, message) => {
         case resultSetorLuz2C:
             if (message != 'error') {
                 if (message == 'true') {
-                    console.log('\n>>>>Fontes luminosas do setor 2. LIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 2. LIGADAS!\n');
                 }else if (message == 'false') {
-                    console.log('\n>>>>Fontes luminosas do setor 2. DESLIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 2. DESLIGADAS!\n');
                 }
             }else {
                 console.log('\nImpossivel ligar as fontes luminosas do setor 2!:\\\n');
@@ -119,9 +119,9 @@ client.on('message', (topic, message) => {
         case resultSetorLuz3C:
             if (message != 'error') {
                 if (message == 'true') {
-                    console.log('\n>>>>Fontes luminosas do setor 3. LIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 3. LIGADAS!\n');
                 }else if (message == 'false') {
-                    console.log('\n>>>>Fontes luminosas do setor 3. DESLIGADAS!');
+                    console.log('\n>>>>Fontes luminosas do setor 3. DESLIGADAS!\n');
                 }
             }else {
                 console.log('\nImpossivel ligar as fontes luminosas do setor 3!:\\\n');
@@ -129,9 +129,9 @@ client.on('message', (topic, message) => {
             break;
         case resultAutoC:
             if (message == 'true') {
-                console.log('\n>>>>Modo automatico. LIGADA!');
+                console.log('\n>>>>Modo automatico. LIGADA!\n');
             }else if (message == 'false') {
-                console.log('\n>>>>Modo automatico. DESLIGADA!');
+                console.log('\n>>>>Modo automatico. DESLIGADA!\n');
             }
             break;
     }

@@ -88,7 +88,6 @@ broker.on('connect', () => {
 broker.on('message', (topic, message) => {
     //Topicos do cliente
     if (topic == sensorLuzC) {
-        // var aux = intLuz.shift();
         broker.publish(resultSensorLuz, intLuz.toString());
         intLuz = [];
     }else if (topic == setorLuz1C) {

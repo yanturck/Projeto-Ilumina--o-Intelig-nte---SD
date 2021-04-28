@@ -66,7 +66,7 @@ publisher.on('connect', async () => {
         
         publisher.publish(sensorLuzP, fluxLuminoso.toString());
 
-        await delay(500); // 0.5 segundos
+        await delay(2500); // 2.5 segundos
         //========================================================
         publisher.subscribe(resultAutoP, (err) => {
             if (!err) {
@@ -97,7 +97,7 @@ publisher.on('connect', async () => {
             }
         });
 
-        await delay(500); // 0.5 segundo
+        await delay(2500); // 2.5 segundo
     }
 });
 
@@ -112,7 +112,7 @@ publisher.on('message', (topic, message) => {
                 console.log('\nModo automatico DESATIVO!\n');
            }
            break;
-       case setorLuz1P:
+       case resultSetorLuz1P:
            if (modoAuto == false) {
                 if (message == 'true') {
                     setorL1 = true;
@@ -123,7 +123,7 @@ publisher.on('message', (topic, message) => {
                 }
            }
            break;
-        case setorLuz2P:
+        case resultSetorLuz2P:
             if (modoAuto == false) {
                 if (message == 'true') {
                     setorL2 = true;
@@ -134,7 +134,7 @@ publisher.on('message', (topic, message) => {
                 }
            }
             break;
-        case setorLuz3P:
+        case resultSetorLuz3P:
             if (modoAuto == false) {
                 if (message == 'true') {
                     setorL3 = true;
